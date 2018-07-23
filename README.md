@@ -11,4 +11,4 @@ With this sample application you can make a leaderboard to rank your friends and
 
 #### Update app.py per the comments
 
-You can see this Flask app in action at http://comstack
+You can see an example of this Flask app in action with some of my colleagues at http://comstack.azurewebsites.com

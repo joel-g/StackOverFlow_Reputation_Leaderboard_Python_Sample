@@ -9,4 +9,6 @@ With this sample application you can make a leaderboard to rank your friends and
 * Stack Overflow user IDs of your friends (you can get these from their profile pages)
 * Stack Exchange API key (available for free [here](https://stackapps.com/apps/oauth/register))
 
-### Update app.py per the comments
+#### Update app.py per the comments
+
+You can see this Flask app in action at http://comstack

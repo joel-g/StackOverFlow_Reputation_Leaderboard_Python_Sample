@@ -1,0 +1,82 @@
+body {
+    background-color: deepskyblue;
+    font-family: sans-serif;
+}
+.user {
+    display: inline-block;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 4px;
+}
+
+.gold, .silver, .bronze {
+    padding: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.gold {
+    color: #FFCB00;
+    background-color: #FFF8E1;
+    border-color: #FFCB00;
+}
+
+.silver {
+    color: #B3B7BB;
+    border-color: #B3B7BB;
+}
+
+.bronze {
+    color: #D0A583;
+    border-color: #D0A583;
+}
+
+.medals {
+    align-content: center;
+    margin: 5 auto;
+}
+
+.profile-pic {
+    height: 60px;
+    width: 60px;   
+}
+
+.rank {
+    font-size: 15px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+    position: relative;
+    right: 16px;
+}
+
+nav {
+    margin: 10 auto; 
+}
+
+.rank {
+    margin-left: 25px;
+    position: relative;
+    bottom: 25px;
+}
+
+.title {
+    display: inline;
+}
+
+.links {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.header {
+    color: white;
+}

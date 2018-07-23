@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <!-- <title>Azure CXP Community Stack Overflow Leaderboard</title> -->
+        <link rel="stylesheet" type="text/css" href={{ url_for('static',filename='styles/style.css') }} >
+    </head>
+    <body>
+        <nav>
+            <div class='header'>Azure CXP Community Stack Overflow Reputation Leaderboard</div>
+            <h2 class='title'>{{ title }}</h2>
+            <span class='links'><a href='/'>Total rep</a> | 
+            <a href='/month'>Rep this month</a> | 
+            <a href='/week'>Rep this week</a></span>
+        </nav>
+        <!-- {% for user in users %} -->
+            <span class='user'>
+                        
+                <ul class='list'>
+                    <li><img src={{user.profile_image}} class='profile-pic'><span class='rank'><b>#{{loop.index}}</b></span></li>
+                    <li class='name'><b><a href={{user.link}}>{{ user.display_name }}</a></b></li>
+                    <li>Total Rep: {{ user.reputation }}</li>
+                    <li>Change this week: {{ user.reputation_change_week }}</li>
+                    <li>Change this month: {{ user.reputation_change_month }}</li>
+                    <li>
+                        <div class='medals'>
+                            <span class='gold'>{{ user.badge_counts.gold }} ●</span>
+                            <span class='silver'>{{ user.badge_counts.silver }} ●</span>
+                            <span class='bronze'>{{ user.badge_counts.bronze }} ●</span>
+                        </div>
+                    </li>
+                </ul>
+            </span>
+        <!-- {% endfor %} -->
+    </body>
+</html>

@@ -1,17 +1,17 @@
 <html>
     <head>
-        <!-- <title>Azure CXP Community Stack Overflow Leaderboard</title> -->
+        <title>Stack Overflow Reputation Leaderboard</title>
         <link rel="stylesheet" type="text/css" href={{ url_for('static',filename='styles/style.css') }} >
     </head>
     <body>
         <nav>
-            <div class='header'>Azure CXP Community Stack Overflow Reputation Leaderboard</div>
+            <div class='header'>Stack Overflow Reputation Leaderboard</div>
             <h2 class='title'>{{ title }}</h2>
             <span class='links'><a href='/'>Total rep</a> | 
             <a href='/month'>Rep this month</a> | 
             <a href='/week'>Rep this week</a></span>
         </nav>
-        <!-- {% for user in users %} -->
+        {% for user in users %}
             <span class='user'>
                         
                 <ul class='list'>
@@ -29,6 +29,6 @@
                     </li>
                 </ul>
             </span>
-        <!-- {% endfor %} -->
+        {% endfor %}
     </body>
 </html>

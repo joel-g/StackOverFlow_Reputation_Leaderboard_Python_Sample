@@ -7,7 +7,7 @@ app = Flask(__name__)
 # You can get the User ID from the URL of any profile.
 # For example: https://stackoverflow.com/users/8826629/joel-guerra-msft the ID is 8826629
 
-STACK_IDS=('8826629','9541448', '6591675', '7452904', '9393813', '8840926', '9454112', '9598801', '8797362', '8748848', '9672092', '9603809', '9536851', '8366814', '9541342', '8840650', '9873161', '9401038', '5420074')
+STACK_IDS=('8826629')
 
 # You will need your own Stack Exchange API key
 # Register for one here: https://stackapps.com/apps/oauth/register

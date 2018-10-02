@@ -5,18 +5,17 @@ app = Flask(__name__)
 
 # Fill this tuple with strings of all the Stack Exchange user IDs you'd like to rank on your leaderboard.
 # You can get the User ID from the URL of any profile.
-# For example: https://stackoverflow.com/users/8826629/joel-guerra-msft the ID is 8826629
+# For example: https://stackoverflow.com/users/6875908/austin-ewens the ID is 6875908
 
-STACK_IDS=('8826629')
+STACK_IDS=('6875908', '8190897', '6352706')
 
 # You will need your own Stack Exchange API key
 # Register for one here: https://stackapps.com/apps/oauth/register
 # Replace 'INSERT_YOUR_KEY_HERE' with your key in the string below
 
 def get_user(user_id):
-    res = requests.get("http://api.stackexchange.com/2.2/users/" + user_id + "?order=desc&sort=reputation&site=stackoverflow&key=INSERT_YOUR_KEY_HERE"
+    res = requests.get("http://api.stackexchange.com/2.2/users/" + user_id + "?order=desc&sort=reputation&site=stackoverflow&key=7DAeQ9A5AxvhXWwUhCDxlg(("
     return res.json()['items'][0]
-
 
 def rank_users(order_by):
     jsons = map(get_user, STACK_IDS)

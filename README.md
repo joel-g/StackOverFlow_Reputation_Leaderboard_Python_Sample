@@ -12,4 +12,4 @@ With this sample application you can make a leaderboard to rank your friends and
 #### Update app.py per the comments
 If you change the HTML/CSS to make your own presentation please @ me on Twitter [@joelatwar](http://twitter.com/joelatwar). I'd really like to see your designs.
 
-You can see an example of this Flask app in action with some of my colleagues at http://sampleleaderboard.azurewebsites.com
+You can see an example of this Flask app in action with some of my colleagues at http://comstack.azurewebsites.com

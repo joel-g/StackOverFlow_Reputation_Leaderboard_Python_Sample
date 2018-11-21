@@ -14,7 +14,7 @@ STACK_IDS=('8826629')
 # Replace 'INSERT_YOUR_KEY_HERE' with your key in the string below
 
 def get_user(user_id):
-    res = requests.get("http://api.stackexchange.com/2.2/users/" + user_id + "?order=desc&sort=reputation&site=stackoverflow&key=INSERT_YOUR_KEY_HERE"
+    res = requests.get("http://api.stackexchange.com/2.2/users/" + user_id + "?order=desc&sort=reputation&site=stackoverflow&key=INSERT_YOUR_KEY_HERE")
     return res.json()['items'][0]
 
 
